@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="JuegoP-P-T.css">
+
+        <title>Piedra | Papel | Tijerass</title>
+    </head>
+    <body>
+
+    <header class="header"> 
+        <h2 class="header-titulo">Piedra | Papel | Tijerass</h2>
+    </header>
+
+    <div class="main-contenier">
+        <div class="vs-contenedor">
+            <div class="player">
+                <img id="player1" src="Imagenes/persona.svg">
+                <p>player 1</p>
+                <p id="puntos-jugador1">0</p>
+            </div>
+
+            <div class="vs">
+                <h3 id="resultado">VS</h3>
+            </div>
+
+            <div class="player">
+                <img id="player2" src="Imagenes/cpu.svg">
+                <p>player 2</p>
+                <p id="puntos-jugador2">0</p>
+            </div>
+
+        </div>
+
+        <div class="juego-contenedor">
+            <div class="juego-opciones">
+
+                <button value="1" id="piedra" class="opcion_piedra" onclick="CambioPiedra()">
+                    <img src="Imagenes/Piedra.PNG">
+                </button>
+
+                <button value="2" id="papel" class="opcion_papel" onclick="CambioPapel()">
+                    <img src="Imagenes/Papel.PNG">
+                </button>
+
+                <button value="3" id="tijeras" class="opcion_tijeras" onclick="CambioTijeras()">
+                    <img src="Imagenes/Tijeras.PNG">
+                </button>
+            </div>
+
+
+            <div class="start-juego">
+                <button id="start-juego" onclick="iniciar()">
+                    <img src="Imagenes/play.svg">
+                </button>
+    
+                <button id="reset-juego" onclick="reiniciar()">
+                    <img src="Imagenes/reset.svg">
+                </button>
+            </div>
+
+            <div class="reglas">
+                <p>Piedra le gana a Tijera y Pierde contra Papel</p>
+                <p>Papel le gana a Piedra y Pierde contra Tijeras</p>
+                <p>Tijera le gana a Papel y Pierde contra Piedra</p>
+            </div>
+
+        </div>
+
+
+
+   
+    </div>
+
+
+
+
+
+
+        <script src="JuegoP-P-T.js"></script>
+    </body>
+</html>

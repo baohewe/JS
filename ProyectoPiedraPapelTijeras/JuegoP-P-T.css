@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E8E9EB;
+    color: #0c0910;
+}
+
+.header .header-titulo{
+    font-size: 2.5rem;
+    margin: 40px 0px;
+}
+
+.main-contenier{
+    display: flex;
+   flex-direction: column; 
+}
+
+.main-contenier .vs-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: #2E282A 7.5px solid;
+    padding: 50px 50px 10px 50px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.main-contenier .vs-contenedor .player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-contenier .vs-contenedor img{
+    height: 180px;
+    width: auto;
+}
+.main-contenier .vs-contenedor .vs{
+    margin: 0px 50px;
+}
+img{
+    width: 55px;
+}
+
+.main-contenier .juego-contenedor .juego-opciones{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-contenier .juego-contenedor .juego-opciones button{
+    margin: 0px 20px 20px 20px;
+    width: 120px;
+    height: 80px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #393e46;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.main-contenier .start-juego button{
+    margin: 0px 20px 40px 20px;
+    width: 100px;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #393e46;
+
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.main-contenier .juego-contenedor .juego-opciones button:hover{
+    background-color: #7EA0B7;
+}
+
+.main-contenier .start-juego button:hover{
+    background-color: #E2C044 ;
+}
+
+.main-contenier .juego-contenedor .juego-opciones button img {
+    height: 105px;
+    width: auto;
+
+}
+
+.main-contenier .start-juego button img{
+    height: 40px;
+    width: auto;
+}
+
+.main-contenier .juego-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-contenier .juego-contenedor .reglas{
+    border: solid 10px #393e46;
+    border-radius: 25px;
+    padding: 20px 110px;
+    background-color: white;
+}
+
+.main-contenier .start-juego{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+}
