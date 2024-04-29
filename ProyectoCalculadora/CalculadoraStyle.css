@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: 'digital-7';
+    src: url("fonds/digital-7\ \(mono\).ttf");
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #56b9c4;
+}
+#calculadora{
+    background-color: #575757;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 30px 0 30px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 0px #424244;    
+}
+#calculadora::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 8px;
+    background-color: #424244;
+    transform: rotate(45deg);
+    margin-left: -29px;
+    margin-top: -2px;
+    z-index: -1;
+}
+
+#calculadora::before{
+    content: '';
+    position: absolute;
+    margin-left: 458px;
+    margin-top: -22px;
+    width: 25px;
+    height: 8px;
+    background-color: #424244;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+#calculadora>.operands{
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    background-color: #bcd1c0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 70px;
+    font-family: 'digital-7';
+} 
+
+#calculadora >.operands>[data-opetnado-1]{
+    font-size: 40px;
+}
+
+
+#calculadora > #fila-botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#calculadora > #fila-botones > input[type="button"]{
+    padding: 10px;
+    background-color: #ececec;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #c9c9c9;
+    font-size: 25px;
+}
+
+#calculadora > #fila-botones > input[type="button"]:nth-child(19){
+    background-color: #f5a34d;
+    border-color: #ce812a;
+}
+
+#calculadora > #fila-botones > input[type="button"]:nth-child(3){
+    grid-column: span 2;
+    background-color: #f5a34d;
+    border-color: #ce812a;
+}
+
+#info{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#info p{
+    color: white;
+    text-decoration: none;
+}
